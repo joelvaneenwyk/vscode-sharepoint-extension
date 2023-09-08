@@ -4,9 +4,9 @@
         "name": "Chris Hasz",
         "url": "https://www.chrishasz.com"
     },
-    "name": "spgo",
+    "name": "sharepoint-ide",
     "displayName": "SPGo",
-    "description": "A Lightweight, Open Source, SharePoint IDE for Visual Studio Code.",
+    "description": "SharePoint IDE for Visual Studio Code that is lightweight and open-source.",
     "keywords": [
         "SharePoint",
         "SharePoint Online",
@@ -15,6 +15,7 @@
         "ide",
         "multi-root ready"
     ],
+    "main": "./dist/src/extension.js",
     "version": "1.8.0",
     "publisher": "SiteGo",
     "icon": "assets/SiteGoLogo.png",
@@ -38,6 +39,37 @@
     "categories": [
         "Other"
     ],
+    "scripts": {
+        "vscode:prepublish": "webpack --mode production",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "webpack": "webpack --mode development",
+        "webpack-dev": "webpack --mode development --watch",
+        "test-compile": "tsc -p ./",
+        "lint": "tslint -p ./"
+    },
+    "devDependencies": {
+        "@types/bluebird": "^3.5.38",
+        "@types/fs-extra": "^11.0.1",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^20.5.9",
+        "@types/vscode": "^1.82.0",
+        "mocha": "^10.2.0",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.2.2",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "cpass": "^2.3.0",
+        "fs-extra": "^11.1.1",
+        "glob-to-regexp": "^0.4.1",
+        "parse-glob": "^3.0.4",
+        "path": "^0.12.7",
+        "sp-request": "^3.0.0",
+        "sppull": "^3.0.1",
+        "spsave": "^4.0.2"
+    },
     "activationEvents": [
         "workspaceContains:SPGo.json",
         "onCommand:spgo.checkOutFile",
@@ -56,7 +88,6 @@
         "onCommand:spgo.copyRelativeUrl",
         "onCommand:spgo.copyAbsoluteUrl"
     ],
-    "main": "./dist/src/extension.js",
     "contributes": {
         "commands": [
             {
@@ -227,36 +258,5 @@
                 }
             ]
         }
-    },
-    "scripts": {
-        "vscode:prepublish": "webpack --mode production",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "webpack": "webpack --mode development",
-        "webpack-dev": "webpack --mode development --watch",
-        "test-compile": "tsc -p ./",
-        "lint": "tslint -p ./"
-    },
-    "devDependencies": {
-        "@types/bluebird": "^3.5.33",
-        "@types/fs-extra": "^8.1.1",
-        "@types/mocha": "^2.2.32",
-        "@types/node": "^7.10.14",
-        "@types/vscode": "^1.52.0",
-        "mocha": "^10.2.0",
-        "ts-loader": "^6.2.2",
-        "typescript": "^3.9.7",
-        "webpack": "^4.46.0",
-        "webpack-cli": "^3.3.12"
-    },
-    "dependencies": {
-        "cpass": "^2.3.0",
-        "fs-extra": "^8.1.0",
-        "glob-to-regexp": "^0.4.1",
-        "parse-glob": "^3.0.4",
-        "path": "^0.12.7",
-        "sp-request": "^2.1.3",
-        "sppull": "^2.7.0",
-        "spsave": "^4.0.0"
     }
 }
