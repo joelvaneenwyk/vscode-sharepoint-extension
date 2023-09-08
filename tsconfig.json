@@ -19,14 +19,15 @@
         "moduleResolution": "node"
     },
     "include": [
+        "**/*.ts",
         "webpack.config.js",
-        "src/**/*.ts",
         "./node_modules/vscode/vscode.d.ts",
         "./node_modules/vscode/lib/*",
-        "test/**/*"
     ],
     "exclude": [
         "node_modules",
-        ".vscode-test"
+        ".vscode-test",
+        "src/**/*.js",
+        "test/**/*.js"
     ]
 }
