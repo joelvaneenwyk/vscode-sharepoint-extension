@@ -1,9 +1,10 @@
-//@ts-check
-'use strict';
+/**
+ * Webpack config for SharePoint IDE extension.
+ */
 
 const path = require('path');
 
-/**@type {import('webpack').Configuration}*/
+/** @type {import('webpack').Configuration} */
 const config = {
   target: 'node', // vscode extensions run in a Node.js-context 📖 -> https://webpack.js.org/configuration/node/
   entry: './src/extension.ts', // the entry point of this extension, 📖 -> https://webpack.js.org/configuration/entry-context/
@@ -31,9 +32,9 @@ const config = {
           {
             loader: 'ts-loader',
             options: {
-                compilerOptions: {
-                    "module": "es6" // override `tsconfig.json` so that TypeScript emits native JavaScript modules.
-                }
+              compilerOptions: {
+                module: 'es6' // override `tsconfig.json` so that TypeScript emits native JavaScript modules.
+              }
             }
           }
         ]
@@ -41,4 +42,5 @@ const config = {
     ]
   }
 };
+
 module.exports = config;
