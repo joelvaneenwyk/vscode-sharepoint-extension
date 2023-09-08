@@ -46,7 +46,8 @@
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
         "test-compile": "tsc -p ./",
-        "lint": "eslint **/*.ts"
+        "lint": "eslint **/*.ts",
+        "lint:fix": "eslint --fix **/*.ts"
     },
     "devDependencies": {
         "@types/bluebird": "^3.5.38",
