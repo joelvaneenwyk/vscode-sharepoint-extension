@@ -3,25 +3,22 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": [
+        "standard-with-typescript",
+        "prettier"
+    ],
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
     },
     "rules": {
         "@typescript-eslint/naming-convention": "warn",
-        "@typescript-eslint/semi": [
-            "warn",
-            "always"
-        ],
-        "curly": "warn",
+        "@typescript-eslint/semi": "off",
+        "curly": "off",
         "eqeqeq": "warn",
-        "no-trailing-spaces": "warn",
+        "no-trailing-spaces": "off",
         "no-throw-literal": "warn",
-        "no-tabs": [
-            "warn",
-            "always"
-        ],
+        "no-tabs": "off",
         "semi": "off",
         "indent": "off"
     },

@@ -1,7 +1,14 @@
 {
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+            "source.fixAll": true,
+            "source.organizeImports": true
+        }
+    },
     "[typescript]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-        "editor.formatOnType": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true,
             "source.fixAll": true,
@@ -30,6 +37,12 @@
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.suggest.insertMode": "replace"
     },
+    "editor.formatOnPaste": false, // required
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "vs-code-prettier-eslint.prettierLast": "false", // set as "true" to run 'prettier' last not first
     "eslint.validate": [
         "javascript",
         "typescript"
@@ -37,8 +50,6 @@
     "vscode-nmake-tools.workspaceBuildDirectories": [
         "."
     ],
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
     "mochaExplorer.files": "test/index.ts",
     "mochaExplorer.require": "ts-node/register",
     "vscode-nmake-tools.attemptExternalExtensionInstall": false,
@@ -48,5 +59,6 @@
     },
     "typescript.tsdk": ".yarn/sdks/typescript/lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
-    "eslint.nodePath": ".yarn/sdks"
+    "eslint.nodePath": ".yarn/sdks",
+    "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
 }

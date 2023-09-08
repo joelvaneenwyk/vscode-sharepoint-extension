@@ -46,8 +46,8 @@
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
         "test-compile": "tsc -p ./",
-        "lint": "eslint **/*.ts",
-        "lint:fix": "eslint --fix **/*.ts"
+        "lint": "eslint \"**/*.ts\"",
+        "lint:fix": "eslint --fix \"**/*.ts\""
     },
     "devDependencies": {
         "@types/bluebird": "^3.5.38",
@@ -68,11 +68,14 @@
         "webpack-cli": "^5.1.4"
     },
     "dependencies": {
+        "@typescript-eslint/parser": "^6.6.0",
         "cpass": "^2.3.0",
+        "eslint-config-prettier": "^9.0.0",
         "fs-extra": "^11.1.1",
         "glob-to-regexp": "^0.4.1",
         "parse-glob": "^3.0.4",
         "path": "^0.12.7",
+        "prettier": "^3.0.3",
         "sp-request": "^3.0.0",
         "sppull": "^3.0.1",
         "spsave": "^4.0.2",

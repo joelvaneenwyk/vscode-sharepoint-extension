@@ -1,18 +1,19 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "es2020",
+        "lib": [
+            "es2020"
+        ],
         "outDir": "dist",
+        "strict": false,
         "sourceMap": true,
         "removeComments": true,
-        "lib": [
-            "es6"
-        ],
         "allowJs": true,
         "noUnusedParameters": true,
         "noUnusedLocals": true,
         "noImplicitThis": true,
-        "strictNullChecks": true,
+        "strictNullChecks": false,
         "forceConsistentCasingInFileNames": true,
         "skipLibCheck": true,
         "moduleResolution": "node"
@@ -24,6 +25,7 @@
         "test/**/*"
     ],
     "exclude": [
+        "node_modules",
         ".vscode-test"
     ]
 }

@@ -20,3 +20,6 @@ dist
 #Documentation
 docs/_site
 docs/Gemfile.lock
+
+test/**/*.js
+test/**/*.js.map
