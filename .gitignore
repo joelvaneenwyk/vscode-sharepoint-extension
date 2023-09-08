@@ -8,6 +8,12 @@ node_modules
 *.vsix
 .vscode-test
 
+#Yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+.pnp.*
+
 #Node Stuff
 npm-debug.log
 dist
