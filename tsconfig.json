@@ -12,14 +12,15 @@
         "noUnusedParameters": true,
         "noUnusedLocals": true,
         "noImplicitThis": true,
+        "strictNullChecks": true,
         "forceConsistentCasingInFileNames": true,
         "skipLibCheck": true,
         "moduleResolution": "node"
     },
     "include": [
-		"src/**/*.ts",
-		"./node_modules/vscode/vscode.d.ts",
-		"./node_modules/vscode/lib/*",
+        "src/**/*.ts",
+        "./node_modules/vscode/vscode.d.ts",
+        "./node_modules/vscode/lib/*",
         "test/**/*"
     ],
     "exclude": [

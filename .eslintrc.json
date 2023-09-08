@@ -10,16 +10,20 @@
     },
     "rules": {
         "@typescript-eslint/naming-convention": "warn",
-        "@typescript-eslint/semi": "warn",
+        "@typescript-eslint/semi": [
+            "warn",
+            "always"
+        ],
         "curly": "warn",
         "eqeqeq": "warn",
+        "no-trailing-spaces": "warn",
         "no-throw-literal": "warn",
-        "no-tabs": "warn",
-        "semi": 2,
-        "indent": [
-            "error",
-            4
-        ]
+        "no-tabs": [
+            "warn",
+            "always"
+        ],
+        "semi": "off",
+        "indent": "off"
     },
     "ignorePatterns": [
         "out",
