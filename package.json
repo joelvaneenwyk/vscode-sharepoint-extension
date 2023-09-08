@@ -68,7 +68,8 @@
         "path": "^0.12.7",
         "sp-request": "^3.0.0",
         "sppull": "^3.0.1",
-        "spsave": "^4.0.2"
+        "spsave": "^4.0.2",
+        "ts-node": "^10.9.1"
     },
     "activationEvents": [
         "workspaceContains:SPGo.json",

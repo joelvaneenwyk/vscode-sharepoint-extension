@@ -1,0 +1,14 @@
+{
+  "vscode-nmake-tools.workspaceBuildDirectories": [
+    "."
+  ],
+  "mochaExplorer.files": "test/index.ts",
+  "mochaExplorer.require": "ts-node/register",
+  "vscode-nmake-tools.attemptExternalExtensionInstall": false,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
