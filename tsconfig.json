@@ -19,6 +19,7 @@
         "moduleResolution": "node"
     },
     "include": [
+        "webpack.config.js",
         "src/**/*.ts",
         "./node_modules/vscode/vscode.d.ts",
         "./node_modules/vscode/lib/*",

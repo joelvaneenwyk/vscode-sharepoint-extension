@@ -9,8 +9,9 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.ts]
+[*.{js,ts}]
 indent_size = 4
+quote_type = single
 
 [*.md]
 indent_size = 2

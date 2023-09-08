@@ -16,6 +16,7 @@
         "@typescript-eslint/semi": "off",
         "curly": "off",
         "eqeqeq": "warn",
+        "quotes": "off",
         "no-trailing-spaces": "off",
         "no-throw-literal": "warn",
         "no-tabs": "off",
