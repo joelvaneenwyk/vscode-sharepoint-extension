@@ -4,7 +4,7 @@
         "name": "Chris Hasz",
         "url": "https://www.chrishasz.com"
     },
-    "name": "sharepoint-ide",
+    "name": "spgo",
     "displayName": "SPGo",
     "description": "SharePoint IDE for Visual Studio Code that is lightweight and open-source.",
     "keywords": [
@@ -45,6 +45,7 @@
         "watch": "tsc -watch -p ./",
         "webpack": "webpack --mode development",
         "webpack-dev": "webpack --mode development --watch",
+        "build": "webpack --mode production",
         "test-compile": "tsc -p ./",
         "lint": "eslint \"**/*.ts\"",
         "lint:fix": "eslint --fix \"**/*.ts\""
