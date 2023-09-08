@@ -6,6 +6,12 @@
             "options": {
                 "parser": "json"
             }
+        },
+        {
+            "files": "*.js",
+            "options": {
+                "tabWidth": 2
+            }
         }
     ]
 }

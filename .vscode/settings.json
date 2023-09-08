@@ -4,14 +4,16 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true,
             "source.organizeImports": true
-        }
+        },
+        "editor.indentSize": 2
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true,
             "source.organizeImports": true
-        }
+        },
+        "editor.indentSize": 4
     },
     "[jsonc]": {
         "editor.quickSuggestions": {
